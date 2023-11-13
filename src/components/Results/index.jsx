@@ -2,15 +2,11 @@ import {
   Card,
   CardBody,
   CardFooter,
-  ButtonGroup,
   Button,
   Image,
   Stack,
   Heading,
   Text,
-  Divider,
-  Wrap,
-  WrapItem,
 } from "@chakra-ui/react";
 
 const Results = ({ results }) => {
