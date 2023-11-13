@@ -1,8 +1,7 @@
 import { Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import { SearchContext } from "../../contexts/SearchContext";
-import axios from "axios";
 
 const Search = () => {
   const { state, dispatch, searchFor } = useContext(SearchContext);
@@ -27,7 +26,6 @@ const Search = () => {
           onKeyDown={(e) => handleKeyDown(e)}
         />
       </InputGroup>
-      {state.results?.status === 200 && <p>Yay!</p>}
     </Stack>
   );
 };
